@@ -1,0 +1,289 @@
+/*starting the about us section*/
+
+/*starting section after about us inside dib pics*/
+.cn-af-about{
+    background-color: rgb(248, 252, 254);
+}
+.inside-div-pic{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 13px rgb(217, 236, 242); 
+
+}
+.inside-div-pic img{
+    border-radius: 20px 20px 0px 0px ;
+}
+/*end of the section after about us inside dib pics*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*starting rules and regulations*/
+.cn-af-after-about{
+    background-color: rgba(246, 252, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+}
+.row-rules div img{
+    box-shadow: 5px 5px 7px 6px rgb(237, 249, 255);
+    border-radius: 50%;
+    padding: 15px;
+}
+.con-rule{
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+.svg-bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    bottom: -323px;
+}
+/*end of rules and regulations*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*starting footer*/
+.con-footer{
+    background-color: rgb(20, 155, 252);
+    padding: 3rem 0;
+}
+.btn-footer {
+    padding: .3rem 1.5rem;
+    border-radius: 5px;
+    color: #4A99D3;
+}
+.inp-footer {
+    padding: .3rem 1rem;
+    border-radius: 5px;
+}
+.inp-footer::placeholder {
+    color: #0F001A60;
+}
+.sazeha {
+    border-bottom: 2px solid #ffffff;
+    padding: 0 .5rem .1rem 0;
+}
+.menu-sazeha > ul > li > a {
+    color: #ffffff;
+    display: inline-block;
+    padding: .2rem 0;
+}
+.img-footer {
+    border-radius: 50%;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: iranyekan;
+    src: url(./fonts/IRANYekanXVF.woff);
+}
+@font-face {
+    font-family: morabba;
+    src: url(./fonts/Morabba-Bold.woff);
+}
+.font-morabbar {
+    font-family: morabba;
+}
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family: iranyekan;
+    text-decoration: none !important;
+}
+.Contact-nav{
+    padding: .7em 5rem;
+}
+.icon-contact-nav > span {
+    border-radius: 50%;
+    padding: .2rem .5rem;
+}
+.icon-contact-nav > span > a {
+    color: #ffffff;
+}
+.icon-contact-nav > span:first-child {
+    background-color: #1877F2;
+}
+.icon-contact-nav > span:nth-child(2) {
+    background-color: #C13584;
+}
+.icon-contact-nav > span:nth-child(3) {
+    background-color: #1D9BF0;
+}
+.icon-contact-nav > span:last-child {
+    background-color: #FF0000;
+}
+.website-schools{
+    margin-right: .4rem;
+}
+.menu-navigation-top {
+    padding: 1.2rem 4rem;
+    background-color: #149BFC;
+}
+.menu-navigation > li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 .5rem;
+}
+.dv-left-leader> h2 {
+    font-size: 1.2rem;
+    font-family: morabba;
+    word-spacing: .3rem;
+}
+.img-top-header {
+    max-width: 500px;
+}
+.menu-navigation > li:last-child > a {
+    display: none;
+}
+.menu-navigation a{
+    transition: all .3s;
+}
+.menu-navigation a:hover{
+    color: rgb(21, 115, 71);
+}
+.dv-left > div * {
+    color: #1D9BF0;
+}
+.dv-left > div > a > button {
+    all: unset;
+    padding: .3rem 1.2rem;
+    border-radius: 17px;
+    background-color: #38ACFF;
+    color: #ffffff;
+}
+.dv-left > div > a > button > svg {
+    fill: #ffffff;
+}
+.dec-top-to-header {
+    background-image: url(./picture/bg\ light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 288px -35px;
+}
+.container-About_US {
+    padding: 1rem 4rem;
+    background-color: #d3f1fb30;
+}
+.sec-update-schools {
+    padding: 1rem 4rem;
+}
+.text-about-us > h3 {
+    font-size: 2.5rem;
+    color: #38ACFF;
+}
+.title-about-US {
+    max-width: 450px;
+    text-align: justify;
+}
+.title-about-US > p {
+    color: #6B6B6D;
+    font-weight: 300;
+}
+.sec-update-schools {
+    padding-top: 9rem;
+}
+.parent-box-contact{
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow:  0 0 8px 0px #a9a9a9;
+    border-radius: 8px;
+}
+.inputs-container {
+    gap: 1.5rem 0;
+}
+.inputs-container > .inp-name > input:focus .inp-name{
+    border: 1px solid rgb(21, 115, 71);
+}
+.inp-name {
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    padding: .4rem 1rem;
+}
+.inp-name > input {
+    all: unset;
+    direction: rtl;
+    width: 250px;
+}
+.lables{
+    background-color: #ffffff;
+    right: 6px;
+    padding: 0 .4rem;
+    top: -13px;
+    color: #0F001A60;
+}
+.btn-submit-contact {
+    padding: .6rem 1.2rem;
+    border-radius: 15px;
+    background-color: #38ACFF;
+}
+.addres-contact {
+    gap: 1.5rem 0;
+}
+.address {
+    max-width: 300px;
+    text-align: right;
+    color: #0F001A90;
+}
+.address > svg {
+    margin-left: 1rem;
+}
+.bi-geo-alt , .bi-telephone , .b , .b , .b , .b, .b {
+    fill: #38ACFF;
+}
+.apps-contact{
+    gap: 0 1rem;
+}
+/* start to responsive */
+@media screen and (max-width : 864px) {
+    .menu-navigation li:not(:last-child) > a {
+        display: none;
+    }
+    .menu-navigation > li:last-child > a {
+        display: inline-block;
+    }
+    .img-top-header {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .top-Contact-nav {
+        display: none !important;
+    }
+    .dv-left-leader > h2 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 500px) {
+    .menu-navigation-top{
+        padding: 1.2rem 2rem;
+    }
+    .img-top-header {
+        max-width: 290px;
+    }
+    .wellcome-to{
+        font-size:2rem !important;
+    }
+    .container-About_US{
+        padding: 1rem 1.5rem;
+    }
+    .sec-update-schools {
+        padding: 1rem 1.5rem;
+    }
+}
+/*side bar ul*/
+.side-ul li a{
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 .5rem;
+    transition: .3s;
+}
+.side-ul li a:hover{
+    color: rgb(11, 94, 215);
+}
+.side-ul li{
+    padding: 1rem;
+}
+.valed-svgs svg{
+    fill: rgb(11, 94, 215);
+    cursor: pointer;
+}

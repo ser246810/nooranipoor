@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسه نورانی پور</title>
+    <link rel="stylesheet" href="{% static 'main/bootstrap-css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/bootstrap-css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/Cantainer.css' %}">
+</head>
+
+<body>
+    <!--section header-->
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+{% if res %}
+<script>
+  alert("پیام شما با موفقیت ثبت شد");
+</script>
+{% endif %}
+<div dir="rtl" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+    <header>
+        <nav>
+            <div class="top-Contact-nav">
+                <div class="Contact-nav d-flex align-items-center justify-content-between">
+                    <div class="icon-contact-nav d-flex gap-2 align-items-center">
+                        <span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                </svg>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="number-website d-flex align-items-center gap-5">
+                        <span>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-google website-schools" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                                </svg>
+                                www.AliNooraniPour.ir
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-fill website-schools" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                                0113-220381
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-navigation-top d-flex justify-content-between align-items-center flex-row-reverse">
+                <div class="dv-menu-right">
+                    <ul class="d-flex m-0 list-unstyled menu-navigation flex-row-reverse p-0">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">اکادمی</a></li>
+                        <li><a href="#">امکانات</a></li>
+                        <li><a href="#">به روز رسانی مدرسه</a></li>
+                        <li><a href="#">گالری</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                        <li>
+                            <a href="#">
+                                <svg type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--section side bar-->
+                        <div style="background-color: #38ACFF" class="offcanvas offcanvas-end    "  data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                          <div class="offcanvas-header">
+                            <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body ">
+                            <!-- <p>Try scrolling the rest of the page to see this option in action.</p> -->
+                            <ul class="side-ul list-unstyled ">
+                              <li><a href="#">خانه</a></li>
+                              <li><a href="#">درباره ما</a></li>
+                              <li><a href="#">اکادمی</a></li>
+                              <li><a href="#">امکانات</a></li>
+                              <li><a href="#">به روز رسانی مدرسه</a></li>
+                              <li><a href="#">گالری</a></li>
+                              <li><a href="#">ارتباط با ما</a></li>
+                            </ul>
+                            <div class="container-fluid ">
+                              <div class="row side-svgs  ">
+                                <div class=" col valed-svgs">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                  </svg>
+                                </div>
+                                <div class=" col valed-svgs">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                  </svg>
+                                </div>
+                                <div class=" col valed-svgs">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                  </svg>
+                                </div>
+                                <div class=" col valed-svgs">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--end of the side bar-->
+                <div class="dv-left-leader">
+                    <h2 class="text-white m-0">مدیر مدرسه آقای رحیمی نژاد</h2>
+                </div>
+            </div>
+            <section class="dec-top-to-header d-flex align-items-center justify-content-center pt-5 position-relative">
+                <div
+                    class="d-flex align-items-center justify-content-around cols5_24 cols4_24 cols3_24 cols2_24 cols1_24 flex-wrap">
+                    <div class="dv-right">
+                        <img src="{% static 'main/picture/Frame 1.png' %}" class="img-top-header" alt="" />
+                    </div>
+                    <div class="dv-left d-flex flex-column align-items-center">
+                        <div>
+                            <h3 style="font-size: 3rem; text-align: right" class="wellcome-to">
+                                خوش آمدید به
+                            </h3>
+                        </div>
+                        <div>
+                            <p style="text-align: right; font-size: 1.3rem">
+                                مدرسه علی نورانی پور
+                            </p>
+                        </div>
+                        <div class="p-4 " style="text-align: right">
+                            <a href="#">
+                                <button class="btn-statr">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                    </svg>
+                                    شروع مطالعه
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <!--end of the section header-->
+    <!--section about us-->
+    <div dir="rtl" class="container-fluid p-4 pt-5 ">
+        <div class="row   text-center ">
+            <h2 class="text-primary  font-morabbar">درباره هنرستان نورانی پور</h2>
+        </div>
+        <div class="row justify-content-around ">
+            <div
+                class="col-xl-6 col-lg-8 col-md-9 col-sm-10 col-10 text-center align-items-center align-content-center   ">
+                <p class="text-secondary ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                    طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در
+                    شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت
+                    بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و</p>
+                <button class="btn btn-primary btn-more">اطلاعات بیشتر</button>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-sm-8 col-10 text-center ">
+                <img src="{% static 'main/picture/在线学习205文艺肌理矢量创意插画文艺-01.png' %}" alt="" class="w-100 ">
+            </div>
+        </div>
+    </div>
+    <!-- section after about us -->
+    <div class="container-fluid justify-content-around cn-af-about">
+        <div class="row ">
+            <div class=" text-center text-primary inside-div-about p-2 fs-3  font-morabbar">
+                درباره ما
+            </div>
+        </div>
+        <div class="row justify-content-around ">
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-10 col-11 rect-div ">
+                <div class="inside-div-pic">
+                    <div class="back-inside ">
+                        <img class="w-100 " src="{% static 'main/picture/Rectangle (2).png' %}" alt="backgorund of the dive">
+                        <p class="p-4 text-primary fs-4 font-morabbar">دیسیپلین</p>
+                        <p class="p-4 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                            طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-10 col-11 rect-div ">
+                <div class="inside-div-pic">
+                    <div class="back-inside ">
+                        <img class="w-100" src="{% static 'main/picture/Rectangle (1).png' %}" alt="backgorund of the dive">
+                        <p class="p-4 text-primary fs-4  font-morabbar">محتوا</p>
+                        <p class="p-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-10 col-11 rect-div ">
+                <div class="inside-div-pic">
+                    <div class="back-inside  ">
+                        <img class="w-100" src="{% static 'main/picture/Rectangle.png' %}" alt="backgorund of the dive">
+                        <p class="p-4 text-primary fs-4  font-morabbar">قوانین مربوطه</p>
+                        <p class="p-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 ">
+            <div class="text-center ">
+                <button class="btn btn-outline-primary inside-div-btn">بیشتر</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of this section -->
+    <!--the section after this section-->
+    <div class="container-fluid d-flex cn-af-after-about justify-content-around flex-column  position-relative  ">
+        <div class="row">
+            <div class="inside-cnaf text-center text-primary fs-3 p-3 mt-3 ">
+                <h3>امکانات</h3>
+            </div>
+        </div>
+        <div class="row justify-content-around  text-center ">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-9 ">
+                <img src="{% static 'main/picture/Ellipse 11 (2).png' %}" alt="elipses">
+                <h4>زمین بازی</h4>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-9 text-center">
+                <img src="{% static 'main/picture/Ellipse 11 (1).png' %}" alt="elipses">
+                <h4>کارگاه ها</h4>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-9 text-center">
+                <img src="{% static 'main/picture/Ellipse 11.png' %}" alt="elipses">
+                <h4>کتابخانه</h4>
+            </div>
+        </div>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#F5FCFE" fill-opacity="1" d="M0,160L80,144C160,128,320,96,480,112C640,128,800,192,960,224C1120,256,1280,256,1360,256L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
+    <!--end of this section-->
+    <!--rules and regulations section-->
+    <div class="container-fluid con-rule">
+        <div class="row">
+            <div class="text-primary text-center pb-4 ">
+                <h2 class="p-3 ">قوانین و آئین نامه </h2>
+            </div>
+        </div>
+        <div class="row row-rules justify-content-around ">
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 col-10 p-2 text-center ">
+                <img src="{% static 'main/picture/Vector (3).png' %}" alt="rect angle and...">
+                <h3 class="text-primary fs-3 p-3 ">پذیرش های جدید </h3>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 col-10 p-2 text-center ">
+                <img src="{% static 'main/picture/Vector (2).png' %}" alt="rect angle and...">
+                <h3 class="text-primary fs-3 p-3 "> رویه خروج </h3>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 col-10 p-2 text-center ">
+                <img src="{% static 'main/picture/Vector (1).png' %}" alt="rect angle and...">
+                <h3 class="text-primary fs-3 p-3 "> هزینه های مدرسه</h3>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7 col-10 p-2 text-center ">
+                <img src="{% static 'main/picture/Vector.png' %}" alt="rect angle and...">
+                <h3 class="text-primary fs-3 p-3 "> امتحانات و ترفیعات</h3>
+            </div>
+        </div>
+    </div>
+    <!--end of rules and regulations-->
+    <!--update school-->
+    <section class="sec-update-schools">
+        <div class="text-about-us w-100">
+          <h3 class="font-morabbar text-center">بروزرسانی مدرسه</h3>
+        </div>
+  
+        <div
+          class="parent-div-about w-100 d-flex align-items-center justify-content-around flex-wrap"
+        >
+          <div class="image-parent-about-US">
+            <img src="{% static 'main/picture/box.png' %}" class="img-top-header" alt="" />
+          </div>
+          <div class="title-about-US">
+            <p dir="rtl">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی
+              در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را
+              می طلبد
+            </p>
+          </div>
+        </div>
+      </section>
+    <!--end of the school-->
+    <!--contact us-->
+    
+    <section>
+        <div class="text-about-us w-100">
+          <h3 class="font-morabbar text-center">ارتباط با ما</h3>
+        </div>
+  
+        <div
+          class="contanier-box-contact d-flex justify-content-center p-4 w-100"
+        >
+          <div
+            class="parent-box-contact d-flex justify-content-around flex-row-reverse flex-wrap"
+          >
+            <form id="message" action="{% url 'index' %}" method="post">
+              {% csrf_token %}
+              <div class="inputs-container d-flex flex-column align-items-end">
+                <h3 style="font-size: 1.2rem; color: #0f001a50">
+                  برای ما پیام بگذارید
+                  <br>
+                  <h6>{{res}}</h6>
+                </h3>
+                <div class="inp-name position-relative">
+                  <label for="" class="position-absolute lables">نام</label>
+                  <input type="text" name="name" required />
+                </div>
+                <div class="inp-name position-relative">
+                  <label for="" class="position-absolute lables">ادرس ایمیل</label>
+                  <input type="email" name="email" required />
+                </div>
+                <div class="inp-name position-relative">
+                  <label for="" class="position-absolute lables">
+                    ...پیام خود را بنویسید
+                  </label>
+                  <textarea name="message" id="" cols="29" rows="5" style="all: unset; direction: rtl" required></textarea>
+                </div>
+                <input
+                  type="submit"
+                  value="ارسال"
+                  class="w-100 btn-submit-contact border-0 text-white"
+                />
+              </div>
+            </form>
+  
+            <div class="addres-contact d-flex flex-column align-items-end p-4">
+              <div class="address d-flex align-items-center">
+                <span>
+                  استان تهران , رباط کریم , داوودیه , خیابان فرهنگ , هنرستان علی
+                  نورانی پور
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-geo-alt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                  />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+              </div>
+  
+              <div class="address d-flex align-items-center">
+                <span> +234 081-1236-4568</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+              </div>
+  
+              <div class="address d-flex align-items-center">
+                <span> ali-nouranipour@gmail.com </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-chat-square-text b"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </div>
+  
+              <div class="apps-contact d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-twitter b"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                  />
+                </svg>
+  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-instagram b"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-facebook b"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+  
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-youtube b"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  />
+                </svg>
+              </div>
+  
+              <div>
+                <a
+                  href="https://www.google.com/maps/place/%D9%87%D9%86%D8%B1%D8%B3%D8%AA%D8%A7%D9%86+%D9%81%D9%86%DB%8C+%D9%88+%D8%AD%D8%B1%D9%81%D9%87+%D8%A7%DB%8C+%D8%B2%D9%86%D8%AF%D9%87+%DB%8C%D8%A7%D8%AF+%D8%B9%D9%84%DB%8C+%D9%86%D9%88%D8%B1%D8%A7%D9%86%DB%8C+%D9%BE%D9%88%D8%B1%E2%80%AD/@35.491564,51.0782139,15z/data=!4m2!3m1!1s0x0:0xcbdb6ff8c1c6707d?sa=X&ved=1t:2428&ictx=111"
+                >
+                  <img src="{% static 'main/picture/map.png' %}" width="400" class="img-map img-fluid " alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--end of contact us-->
+    <!--footer of the site-->
+    <footer class="con-footer">
+      <div class="d-flex  justify-content-around  flex-wrap align-content-center ">
+          
+          <div class="items-footer">
+              <div>
+                  <p style="max-width: 350px; color: #ffffff; font-weight: 200;"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+              </div> 
+              <div class="inp-box">
+                  <form action="#">
+                      <input type="submit" value="ارسال" class="btn-footer border-0 ">
+                      <input type="text" class="inp-footer border-0 " placeholder="آدرس ایمیل...">
+                  </form>
+              </div>
+          </div>
+          
+          <div class="items-footer">
+              <div>
+                  <span style="color: #ffffff;" class="font-morabbar fs-4 sazeha" > سازه ها </span>
+              </div>
+              <div class="menu-sazeha">
+                  <ul class="list-unstyled m-0  pt-3 ">
+                      <li><a href="#">ارسال</a></li>
+                      <li><a href="#">دریافت</a></li>
+                      <li><a href="#">خرید</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="items-footer">
+              <div>
+                  <span style="color: #ffffff;" class="font-morabbar fs-4 sazeha" > سایرین </span>
+              </div>
+              <div class="menu-sazeha">
+                  <ul class="list-unstyled m-0  pt-3 ">
+                      <li><a href="#">شرایط کاربر</a></li>
+                      <li><a href="#">ارتباط با ما</a></li>
+                      <li><a href="#">مجازات ها</a></li>
+                      <li><a href="#"> حریم خصوصی و سیاست </a></li>
+                      <li><a href="#"> شرایط و ضوابط </a></li>
+                  </ul>
+              </div>
+          </div>
+              
+          <div class="items-footer">
+              <div>
+                  <span style="color: #ffffff;" class="font-morabbar fs-4 sazeha" > درسترسی های سریع </span>
+              </div>
+              <div class="menu-sazeha">
+                  <ul class="list-unstyled m-0  pt-3 ">
+                      <li><a href="#"> ثبت نام </a></li>
+                      <li><a href="#">درباره ما </a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="items-footer">
+              <img src="{% static 'main/picture/IMG_20230314_131205_376-2.jpg' %}" width="230px" class="img-footer" alt="">
+          </div>
+      </div>
+      <div class="container-fluid pt-5 ">
+        <div class="row">
+          <div class="rows-svg d-flex  justify-content-between ">
+            <div class="col">
+              <h4 class=" fs-6  text-primary  ">
+                𝘿𝙚𝙨𝙞𝙜𝙣𝙚𝙙 𝘽𝙮 𝙍𝙖𝙢𝙩𝙞𝙣-𝙁𝙖𝙧𝙞𝙙𝙮 & 𝙈𝙤𝙝𝙖𝙢𝙢𝙖𝙙-𝙎𝙖𝙛𝙖𝙚𝙚
+              </h4>
+            </div>
+            <div class="col d-flex justify-content-end gap-4   ">
+              <div class="valed-svgs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+              </div>
+              <div class="valed-svgs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+              </div>
+              <div class="valed-svgs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+              </div>
+              <div class="valed-svgs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+<script src="{% static 'main/js-bootstrap/bootstrap.bundle.js' %}"></script>
+
+</html>
